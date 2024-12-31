@@ -1,8 +1,12 @@
+// ignore this for now
+
 "use client"
 
-import { authenticate } from "@/utils/wallet";
+import { useConnect } from "@/utils/wallet";
+
 
 export default function ConnectWallet () {
+    const {authenticate} = useConnect();
     const handleAuth = () => {
         authenticate()
       }
