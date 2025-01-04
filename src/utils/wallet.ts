@@ -4,18 +4,19 @@ const appConfig = new AppConfig(['store_write', 'publish_data']);
 const userSession = new UserSession({ appConfig });
 
 const appDetails = {
-    name: 'Choppr',
-    icon: '/next.svg'
+  name: 'Choppr',
+  icon: '/next.svg'
 }
 function authenticate() {
-    showConnect({
-      appDetails: appDetails,
-      redirectTo: '/',
-      onFinish: () => {
-        let userData = userSession.loadUserData();
-      },
-      userSession,
-    });
-  }
+  showConnect({
+    appDetails: appDetails,
+    redirectTo: '/',
+    onFinish: () => {
+      const userData = userSession.loadUserData();
+      console.log(userData);
+    },
+    userSession,
+  });
+}
 
-  export {authenticate, userSession}
+export { authenticate, userSession }
