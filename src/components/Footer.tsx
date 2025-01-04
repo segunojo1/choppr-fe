@@ -3,13 +3,28 @@ export default function Footer() {
     <footer className="px-20 py-14">
       <div className="flex gap-1 items-center mb-8">
         <span className="text-2xl">Logo</span>
-        <h3 className="text-2xl font-semibold uppercase">Chooper</h3>
+        <h2 className="text-2xl font-semibold uppercase">Chooper</h2>
       </div>
 
       <div className="flex items-start justify-between">
-        <Menu />
-        <Company />
-        <Service />
+        <FooterNav attr={["Menu", "Home", "Product", "Pricing", "Resources"]} />
+        <FooterNav
+          attr={[
+            "Company",
+            "About Us",
+            "Help Center",
+            "The Community",
+            "Partner Program",
+          ]}
+        />
+        <FooterNav
+          attr={[
+            "Services",
+            "Link Shortner",
+            "Microsite Builder",
+            "Subscription",
+          ]}
+        />
         <Subscription />
       </div>
 
@@ -20,42 +35,16 @@ export default function Footer() {
   );
 }
 
-function Menu() {
-  return (
-    <div className="flex-1 flex flex-col gap-6 ">
-      <h4 className="font-semibold uppercase">Menu</h4>
-      <ul className="flex flex-col gap-4">
-        <li className="text-[#555]">Home</li>
-        <li className="text-[#555]">Product</li>
-        <li className="text-[#555]">Pricing</li>
-        <li className="text-[#555]">Resources</li>
-      </ul>
-    </div>
-  );
-}
-
-function Company() {
+function FooterNav({ attr }: { attr: string[] }) {
   return (
     <div className="flex-1 flex flex-col gap-6">
-      <h4 className="font-semibold uppercase">Company</h4>
+      <h4 className="font-semibold uppercase">{attr[0]}</h4>
       <ul className="flex flex-col gap-4">
-        <li className="text-[#555]">About Us</li>
-        <li className="text-[#555]">Help Center</li>
-        <li className="text-[#555]">The Community</li>
-        <li className="text-[#555]">Partner Program</li>
-      </ul>
-    </div>
-  );
-}
-
-function Service() {
-  return (
-    <div className="flex-1 flex flex-col gap-6">
-      <h4 className="font-semibold uppercase">Service</h4>
-      <ul className="flex flex-col gap-4">
-        <li className="text-[#555]">Link Shortner</li>
-        <li className="text-[#555]">Microsite Builder</li>
-        <li className="text-[#555]">Subscription</li>
+        {attr.slice(1).map((att) => (
+          <li key={att} className="text-[#555]">
+            <a href="#">{att}</a>
+          </li>
+        ))}
       </ul>
     </div>
   );
@@ -93,7 +82,7 @@ function Subscription() {
 function Legal() {
   return (
     <div className="flex justify-between items-center">
-      <p>&copy; Copyright 2025, all rights reserved</p>
+      <p>&copy; Copyright {new Date().getFullYear()}, all rights reserved</p>
       <div className="flex justify-center gap-4">
         <a href="#">Terms of service</a>
         <a href="#">Privacy policy</a>
