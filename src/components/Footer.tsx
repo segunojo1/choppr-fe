@@ -1,12 +1,12 @@
 export default function Footer() {
   return (
-    <footer className="px-20 py-14">
+    <footer className="px-4 py-4 md:px-20 md:py-14">
       <div className="flex gap-1 items-center mb-8">
         <span className="text-2xl">Logo</span>
         <h2 className="text-2xl font-semibold uppercase">Chooper</h2>
       </div>
 
-      <div className="flex items-start justify-between">
+      <div className="flex items-start justify-between flex-wrap gap-y-12">
         <FooterNav attr={["Menu", "Home", "Product", "Pricing", "Resources"]} />
         <FooterNav
           attr={[
@@ -81,7 +81,7 @@ function Subscription() {
 
 function Legal() {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center flex-wrap gap-4">
       <p>&copy; Copyright {new Date().getFullYear()}, all rights reserved</p>
       <div className="flex justify-center gap-4">
         <a href="#">Terms of service</a>
