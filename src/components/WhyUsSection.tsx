@@ -8,18 +8,18 @@ import { JSX } from "react";
 
 export default function WhyUs() {
   return (
-    <section className="px-20 py-16">
-      <div className="flex justify-between mb-14">
+    <section className="px-4 md:px-20 py-16">
+      <div className="flex justify-between mb-14 flex-col md:flex-row gap-4">
         <h2 className="text-[2.5rem] font-bold basis-full uppercase">
           Why Use Our Services
         </h2>
-        <p className="pl-40 text-[1.1rem] text-[#777]">
+        <p className="md:pl-40 text-[1.1rem] text-[#777]">
           Our platform was built to make every point of connection between your
           content and your audience ignite action.
         </p>
       </div>
 
-      <div className="grid grid-cols-3 grid-rows-2 gap-4">
+      <div className="grid md:grid-cols-3 md:grid-rows-2 gap-4">
         <Stat data={["100k", "Active Users", <CiUser key="ci-user" />]} />
 
         <Stat
@@ -30,7 +30,7 @@ export default function WhyUs() {
           ]}
         />
 
-        <div className="row-span-2 border-2 bg-[#8039DF] flex flex-col justify-between py-6 px-10 rounded-3xl">
+        <div className="order-last md:order-none row-span-2 border-2 bg-[#8039DF] flex flex-col justify-between py-6 px-10 rounded-3xl">
           <i className="bg-[#fff] self-start text-[1.6rem] text-[#8039DF] rounded-full p-2">
             <CiLock />
           </i>
