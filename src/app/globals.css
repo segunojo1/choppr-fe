@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -71,8 +72,12 @@
     @apply bg-background text-foreground;
   }
 }
-
-.shorten {
+body{
+  font-family: "Inter", serif;
+}
+.dashboard{
+  background-image: url("/assets/cubes.png"), url("/assets/swirl.png");
+}.shorten {
   clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
   width: 100%
 }

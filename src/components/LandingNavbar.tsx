@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { useState } from 'react'
-import { NavLink } from "@/app/lib/navlink"
+import { NavLink } from "@/data/navlink"
 
 const LandingNavbar = () => {
   const [isActive, setIsActive] = useState<string>("Home");
