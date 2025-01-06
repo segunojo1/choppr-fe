@@ -77,7 +77,8 @@ body{
 }
 .dashboard{
   background-image: url("/assets/cubes.png"), url("/assets/swirl.png");
-}.shorten {
+}
+.shorten {
   clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
   width: 100%
 }
