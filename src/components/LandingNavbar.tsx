@@ -7,7 +7,7 @@ const LandingNavbar = () => {
   const [isActive, setIsActive] = useState<string>("Home");
 
   return (
-    <nav className="max-w-full bg-white h-[90px] text-black items-center flex flex-row border-b-[#d6d6d6] border-b-[1px]">
+    <nav className="bg-white h-[90px] text-black items-center flex flex-row border-b-[#d6d6d6] border-b-[1px] fixed z-30 w-full top-0">
       <div className="w-[85%] mx-auto flex flex-row justify-between">
         <div className="text-4xl font-extrabold text-[#8039DF] max-lg:text-2xl">
           Logo

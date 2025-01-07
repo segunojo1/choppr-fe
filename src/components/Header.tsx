@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="bg-white text-black w-full">
+    <section className="bg-white text-black w-full mt-36">
       <div className="max-w-[85%] mx-auto">
         <div className="mt-[50px] flex flex-row gap-20">
           <div className="flex flex-col gap-[40px]">
@@ -24,7 +24,13 @@ const Header = () => {
               </button>
             </div>
             <div className="flex flex-row gap-3">
-              <div>
+              <div className="z-30">
+                <Image src={""} alt="" />
+              </div>
+              <div className="z-20">
+                <Image src={""} alt="" />
+              </div>
+              <div className="z-10">
                 <Image src={""} alt="" />
               </div>
               <div className="flex flex-col items-start w-40">
@@ -75,15 +81,15 @@ const Header = () => {
               <div>
                 <Image src={land} alt="" />
               </div>
-              <span className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2">
                 <IoLinkOutline size={25} className="text-[#8039DF]" />
                 <h6 className="font-medium text-base"><span className="text-[#8039DF]">short.</span>link/mailtumator<span className="text-[#8039DF]">|</span></h6>
-              </span>
+              </div >
             </div>
           </div>
         </div>
-      </div >
-    </div >
+      </div>
+    </section>
   )
 }
 
