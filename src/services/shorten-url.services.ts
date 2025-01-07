@@ -15,4 +15,14 @@ export class ShortenUrlService {
       throw error;
     }
   }
+
+  static async getUserUrls(){
+    try {
+      const response = await axios.get(`${this.BASE_URL}/get-user-url/677088ed4b1b61e1808a75f6`);
+      return response.data;
+    } catch (error) {
+      console.error("Error getting user URLs:", error);
+      throw error;
+    }
+  }
 }
