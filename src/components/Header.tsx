@@ -2,6 +2,7 @@ import { HiOutlineCalendar } from "react-icons/hi2";
 import { IoLinkOutline } from "react-icons/io5";
 import { IoIosStar } from "react-icons/io";
 import qrcode from '../../public/qrCode.png'
+import land from '../../public/land.png'
 import Image from "next/image";
 
 const Header = () => {
@@ -42,7 +43,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div>
+          <div className="relative flex flex-col gap-6">
             <div className="border-[2px] border[#D6D6D6] w-[460px] px-5 py-6 rounded-2xl flex flex-col gap-5">
               <span className="flex flex-row justify-between items-center">
                 <h5 className="font-bold text-base">QR CODE</h5>
@@ -56,26 +57,33 @@ const Header = () => {
                   <ul className="flex flex-col gap-2">
                     <li className="flex flex-row gap-5 items-center">
                       <IoLinkOutline size={25} className="text-[#8039DF]" />
-                      <h5 className="text-base text-black font-medium">https://chopper-be/mailtumator</h5>
+                      <h5 className="text-base text-[#4d4d4d] font-medium">https://chopper-be/mailtumator</h5>
                     </li>
                     <li className="flex flex-row gap-5 items-center">
                       <HiOutlineCalendar size={25} className="text-[#8039DF]" />
-                      <h5 className="text-base text-black font-medium">22 December 2024</h5>
+                      <h5 className="text-base text-[#4d4d4d] font-medium">22 December 2024</h5>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="h-12 w-12 bg-[#8039DF]">
-              <IoLinkOutline size={50} />
+            <div className="h-[70px] w-[70px] bg-[#8039DF] rounded-full flex justify-center items-center z-10 absolute top-[201px] right-5">
+              <IoLinkOutline size={30} className="text-white" />
             </div>
-            <div>
-              <h5 className="uppercase">Customize your link</h5>
+            <div className="border-[2px] border[#D6D6D6] w-[460px] px-5 py-6 rounded-2xl flex flex-col gap-5">
+              <h5 className="uppercase text-black text-lg font-bold">Customize your link</h5>
+              <div>
+                <Image src={land} alt="" />
+              </div>
+              <span className="flex flex-row gap-2">
+                <IoLinkOutline size={25} className="text-[#8039DF]" />
+                <h6 className="font-medium text-base"><span className="text-[#8039DF]">short.</span>link/mailtumator<span className="text-[#8039DF]">|</span></h6>
+              </span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   )
 }
 
