@@ -81,7 +81,7 @@ const Header = () => {
               <div>
                 <Image src={land} alt="" />
               </div>
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2 border-[1px] rounded-xl p-4 border[#D6D6D6]">
                 <IoLinkOutline size={25} className="text-[#8039DF]" />
                 <h6 className="font-medium text-base"><span className="text-[#8039DF]">short.</span>link/mailtumator<span className="text-[#8039DF]">|</span></h6>
               </div >

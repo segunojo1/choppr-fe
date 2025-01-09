@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import WhyUs from "@/components/WhyUsSection";
 import GetStarted from "@/components/GetStarted";
 import Header from "@/components/Header";
+import Shorten from "@/components/Shorten";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       {/* import landing page components here, follow semantics */}
       <LandingNavbar />
       <Header />
+      <Shorten />
       <WhyUs />
       <GetStarted />
       <Footer />
