@@ -30,9 +30,9 @@ const Shorten = () => {
   ]
   return (
     <div className='h-[750px] max-lg:h-[1090px]'>
-      <section className='shorten bg-[#292929] w-full h-full relative -top-[4.6rem] pt-16 flex flex-col items-center overflow-hidden'>
+      <section className='shorten bg-[#292929] w-full h-full relative -top-[4.6rem] pt-16 flex flex-col items-center'>
         <div className="flex flex-row -rotate-[3.6deg] w-full max-lg:-rotate-[16deg]">
-          <Marquee className="inline font-[620] items-center text-[#6b6b6b] text-[3.0rem] max-lg:text-4xl">
+          <Marquee className="inline font-[620] items-center text-[#6b6b6b] text-[3.0rem] max-lg:text-4xl overflow-hidden">
             {["shortlink", "Microsite", "CustomLink", "Manage"].map((data, index) => (
               <div key={index} className="mx-4">
                 <span>{data.toUpperCase()}</span>
