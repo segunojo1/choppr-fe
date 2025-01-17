@@ -9,7 +9,7 @@ import paul from '../../public/paul.jpeg'
 
 const Header = () => {
   return (
-    <section className="bg-white text-black w-full mt-36 max-lg:mt-[90px]">
+    <header className="bg-white text-black w-full mt-36 max-lg:mt-[90px]">
       <div className="max-w-[85%] max-lg:max-w-full max-lg:px-3 mx-auto">
         <div className="mt-[50px] max-lg:mt-[20px] flex flex-row max-lg:flex-col gap-14">
           <div className="flex flex-col gap-[40px]">
@@ -94,7 +94,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   )
 }
 
