@@ -7,14 +7,13 @@ import { useLinkTableStore } from "@/store/app.store";
 import { useEffect, useState } from "react";
 
 async function getData(): Promise<Url[]> {
-  // Fetch data from your API here.
   try {
     const response = await ShortenUrlService.getUserUrls();
-    // console.log(response);
-    return response.userShortUrls; // Assuming the API returns data in the correct format
+    
+    return response.userShortUrls;
   } catch (error) {
     console.error("Error fetching data:", error);
-    return []; // Return an empty array on error
+    return [];
   }
 }
 
@@ -38,7 +37,7 @@ export default function LinkTable() {
   return (
     <div className="container mx-auto py-10">
       {loadingTable ? (
-        <div>Loading...</div> // Display loading indicator while fetching
+        <div>Loading...</div>
       ) : (
         <DataTable columns={columns} data={data} />
       )}
