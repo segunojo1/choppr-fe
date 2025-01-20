@@ -1,8 +1,8 @@
-import LandingNavbar from "@/components/LandingNavbar";
-import Footer from "@/components/Footer";
-import WhyUs from "@/components/WhyUsSection";
-import GetStarted from "@/components/GetStarted";
-import Header from "@/components/Header";
+import LandingNavbar from "@/components/landing-page/LandingNavbar";
+import Footer from "@/components/landing-page/Footer";
+import WhyUs from "@/components/landing-page/WhyUsSection";
+import GetStarted from "@/components/landing-page/GetStarted";
+import Header from "@/components/landing-page/Header";
 
 export default function Home() {
   return (
