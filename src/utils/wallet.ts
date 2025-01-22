@@ -9,6 +9,8 @@ export const useConnect = () => {
     if (userSession.isSignInPending()) {
       userSession.handlePendingSignIn().then(userData => {
         // Save or otherwise utilize userData post-authentication
+        console.log(userData);
+        
       });
     } else if (userSession.isUserSignedIn()) {
       // Handle case in which user is already authenticated
