@@ -26,7 +26,7 @@ export const useConnect = () => {
         appDetails,
         redirectTo: '/',
         onFinish: () => {
-          let userData = userSession.loadUserData();
+          const userData = userSession.loadUserData();
           console.log(userData);
           
         },
