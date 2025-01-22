@@ -1,3 +1,5 @@
+"use client"
+
 import ConnectWallet from "@/components/auth/ConnectWallet";
 import BrandLogo from "@/components/shared/brand-logo";
 
