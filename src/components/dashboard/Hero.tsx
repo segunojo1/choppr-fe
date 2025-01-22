@@ -1,6 +1,5 @@
 "use client"
 import ToggleSwitch from "../ui/ToggleSwitch";
-import { useState } from "react";
 import { FaRegCircleQuestion } from "react-icons/fa6";
 import {
     Tooltip,
@@ -9,10 +8,11 @@ import {
     TooltipTrigger,
   } from "@/components/ui/tooltip"
 import { LinkForm } from "./LinkForm";
+import { useHeroStore } from "@/store/app.store";
 
 export const Hero = () => {
     
-    const [isEnabled, setIsEnabled] = useState()
+    const {isEnabled, setIsEnabled} = useHeroStore()
     return (
         <div className="mx-auto w-fit mt-[130px]">
             <h1 className="bg-[radial-gradient(#EB568E_0%,#144EE3_100%)] bg-clip-text text-transparent text-[60px]/[80px] font-extrabold">Shorten Your Loooong Links :&#41;</h1>
