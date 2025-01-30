@@ -4,7 +4,6 @@ import NameEmailForm from "@/components/auth/auth-form";
 import ConnectWallet from "@/components/auth/ConnectWallet";
 import BrandLogo from "@/components/shared/brand-logo";
 import { useAuthStore } from "@/store/auth.store";
-import { useState } from "react";
 
 export default function Login() {
     const {steps} = useAuthStore();

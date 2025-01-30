@@ -21,7 +21,6 @@ import { useLinkTableStore } from "@/store/app.store";
 
 export const LinkForm = () => {
     const { setShortUrl, setError, loading, setLoading, shortUrl } = useUrlStore();
-    const {setLoadingTable} = useLinkTableStore();
     const {userId, setUserID} = useAuthStore();
     const form = useForm<shortenURLFormDef>({
         resolver: zodResolver(shortenURLValidationSchema),

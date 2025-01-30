@@ -1,7 +1,7 @@
 import { HiOutlineCalendar } from "react-icons/hi2";
 import { IoLinkOutline } from "react-icons/io5";
 import { IoIosStar } from "react-icons/io";
-import qrcode from "../../../public/qrCode.png";
+import qrcode from "../../../public/qrcode.png";
 import land from "../../../public/land.png";
 import Image from "next/image";
 import peter from "../../../public/peter.jpeg";

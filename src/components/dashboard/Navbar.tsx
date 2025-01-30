@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import BrandLogo from "../shared/brand-logo";
-import { CiLogin, CiLogout } from "react-icons/ci";
-import { LogOutIcon, User, User2Icon } from "lucide-react";
+import { CiLogin } from "react-icons/ci";
+import { LogOutIcon, User2Icon } from "lucide-react";
 
 const logout = () => {
     localStorage.clear();
