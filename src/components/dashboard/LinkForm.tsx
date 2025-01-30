@@ -17,7 +17,6 @@ import { ShortenUrlService } from "@/services/shorten-url.services";
 import { toast } from "@/hooks/use-toast";
 import { LoaderIcon } from "lucide-react";
 import { useAuthStore } from "@/store/auth.store";
-import { useLinkTableStore } from "@/store/app.store";
 
 export const LinkForm = () => {
     const { setShortUrl, setError, loading, setLoading, shortUrl } = useUrlStore();
